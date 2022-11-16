@@ -15,12 +15,16 @@ public class Human {
         }else{
             this.yearOfBirth = Math.abs(yearOfBirth);
         }
-        if (name == null || town == null || jobTitle == null  || name == "" || town == "" || jobTitle == "") {
+        if (name == null || name == "") {
             this.name = "Информация не указана";
-            this.town = "Информация не указана";
-            this.jobTitle = "Информация не указана";
-
         }
+        if (town == null ||town == "") {
+            this.town = "Информация не указана";
+        }
+        if (jobTitle == null || jobTitle == "") {
+            this.jobTitle = "Информация не указана";
+        }
+
 
     }
 
