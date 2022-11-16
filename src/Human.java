@@ -16,7 +16,10 @@ public class Human {
             this.yearOfBirth = Math.abs(yearOfBirth);
         }
         if (name == null || town == null || jobTitle == null  || name == "" || town == "" || jobTitle == "") {
-            System.out.println("Информация не указана");
+            this.name = "Информация не указана";
+            this.town = "Информация не указана";
+            this.jobTitle = "Информация не указана";
+
         }
 
     }
