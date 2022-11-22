@@ -40,8 +40,10 @@ public class Car {
         if (year <= 0) {
             this.year = 2000;
         }
-        if (engineVolume <= 0) {
+        if (Double.compare (engineVolume,0) == 0) {
             this.engineVolume = 1.5;
+        }else{
+            this.engineVolume = engineVolume;
         }
     }
     @Override

@@ -24,8 +24,6 @@ public class Human {
         if (jobTitle == null || jobTitle == "") {
             this.jobTitle = "Информация не указана";
         }
-
-
     }
 
     @Override
