@@ -14,11 +14,28 @@ public class Car {
         this.year = year;
         this.productionCountry = productionCountry;
 
-        if (brand == null || model == null || color == null || productionCountry == null ||brand == "" || model == "" || color == "" || productionCountry == "") {
+        if (brand == null || brand == "") {
             this.brand = "default";
-            this.model = "default";
+        }else{
+            this.brand = brand;
+        }
+
+        if (color == null || color == "") {
             this.color = "белый";
+        }else{
+            this.color = color;
+        }
+
+        if (model == null || model == "") {
+            this.model = "default";
+        }else{
+            this.model = model;
+        }
+
+        if (productionCountry == null || productionCountry == "") {
             this.productionCountry = "default";
+        }else{
+            this.productionCountry = productionCountry;
         }
         if (year <= 0) {
             this.year = 2000;
